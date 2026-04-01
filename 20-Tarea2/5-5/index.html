@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Herramientas</title>
+    <style>
+        .contenedor{
+            background-color: lightslategray;
+            display: flex;
+            justify-content: center;
+        }
+
+        .botones{
+            display: flex;
+            justify-content: center;
+            margin: 5px;
+            margin-block: 10px;
+            gap: 5px;
+            background-color: azure;
+        }
+
+        .botones:hover{
+            background-color: lightskyblue;
+        transition: 3s;
+        text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="botones">Recorte</div>
+        <div class="botones">Copiar</div>
+        <div class="botones">Pegar</div>
+        <div class="botones">Guardar</div>
+        <div class="botones">Resetear</div>
+    </div>
+</body>
+</html>

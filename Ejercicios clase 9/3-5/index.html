@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <p>Ingresa tu nombre</p>
+    <input type="text" id="nombreUsuario">
+
+
+        <p>Ingresa tu edad</p>
+    <input type="text" id="edadUsuario">
+
+
+    <button onclick="datos()">Ingresar</button>
+    <script>
+        function datos(){
+            let miNombre = document.getElementById(nombreUsuario);
+            let miEdad = document.getElementById(edadUsuario);
+            let informacion = "Hola " + nombreUsuario.value + " tienes " + edadUsuario.value + " años"
+            alert(informacion)
+        }
+    </script>
+</body>
+</html>

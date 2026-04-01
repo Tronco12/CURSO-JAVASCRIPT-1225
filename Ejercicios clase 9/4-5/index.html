@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="tituloNuevo">
+    <button onclick="cambiarTitulo()">Cambiar título</button>
+    <h1 id="salida">Este es el titulo de prueba</h1>
+    <script>
+        function cambiarTitulo(){
+        let elementoTitulo = document.getElementById("tituloNuevo");
+        let elementoTexto = document.getElementById("salida");
+        let mensaje = "El título nuevo es : " + elementoTitulo.value;
+
+        elementoTexto.textContent = mensaje
+        }
+
+    </script>
+</body>
+</html>

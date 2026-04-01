@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Cliente{
+            constructor(nombre, numeroCuenta, saldo){
+                this.nombre = nombre;
+                this.numeroCuenta = numeroCuenta;
+                this.saldo = saldo;
+            }
+
+            depositar(monto){
+                if(monto>0){
+                    this.saldo += monto;
+                    console.log("deposito exitoso Q."+this.saldo)
+                }
+            }
+
+            retirar(monto){
+                if(monto > 0 && monto<this.saldo){
+                    this.saldo -= monto;
+                    console.log("Retiro exitoso Q."+this.retirar)
+                }else{
+                    console.log("Fondos insuficientes");
+                }
+            }
+
+            mostrarSaldo(){
+                console.log(this.saldo);
+            }
+        }
+
+        let cliente1= new Cliente("Carlos", "123456789", 1000);
+        let cliente2 = new Cliente("Luis", "987654321", 4000);
+        let cliente3 = new Cliente("María", "2333456333", 5000);
+
+        clientes = [cliente1, cliente2, cliente3];
+
+        for(let cliente of clientes){
+            cliente.mostrarSaldo()
+        }
+    </script>
+</body>
+</html>
